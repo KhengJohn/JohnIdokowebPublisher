@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styleII.css" />
+  <script src="/js/main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans/css/SpoqaHanSansNeo.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="nav-inner">
+        <img src="../images/logo.png" alt="web icon" class="nav-logo" />
+        <ul id="menu" class="menu">
+          <li><a href="#센터원">센터원</a></li>
+          <li><a href="#이용안내">이용안내</a></li>
+          <li><a href="#서비스소개">서비스소개</a></li>
+          <li><a href="#임대문의">임대문의</a></li>
+          <li><a href="#고객지원">고객지원</a></li>
+        </ul>
+      </div>
+      <img src="../images/webIcon.png" alt="web icon" class="web-icon" />
+      <div class="mobile-menu">
+        <button class="hamburger-button" onclick="toggleMenu()">
+          <span id="line1" class="hamburger-line"></span>
+          <span id="line2" class="hamburger-line"></span>
+          <span id="line3" class="hamburger-line"></span>
+        </button>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h1>미래에셋 센터원은</h1>
+    <h1>국내 최고 수준의 시설과 규모를 자랑하는</h1>
+    <h1>서울의 랜드마크입니다.</h1>
+    <!-- Pagination Dots -->
+    <div class="pagination-dots-div">
+      <span class="title">Main</span>
+      <div class="pagination-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+  <section id="second-section" class="second-section">
+    <div class="second-section-top">
+      <h2>MIRAE ASSET CENTER 1</h2>
+      <div>
+        <span>거대자본을 투자한 금융사의 사업성과 임
+          대오피스가 가지는 효율성을 추구하면서도 </span>
+        <span>동시에 공공의 공익성을 동시에 만족시키고 있습니다.</span>
+      </div>
+    </div>
+
+    <div class="second-section-middle">
+      <div class="content"><span class="content-title">위치</span>
+        <div class="content-span"><span>서울 중구 </span><span>수하동 67</span></div>
+      </div>
+      <div class="content"><span class="content-title">층수</span>
+        <div class="content-span"><span>지상 32층</span><span>지하 8층</span></div>
+      </div>
+      <div class="content"><span class="content-title">용도</span>
+        <div class="content-span"><span>판매시설</span><span>업무시설</span></div>
+      </div>
+      <div class="content"><span class="content-title">대지면적 / 건축면적</span>
+        <div class="content-span"><span>9,097.3m²</span><span>5,094.78m²</span></div>
+      </div>
+    </div>
+    <img src="images/center1BG.png" class="center1BG" alt="">
+    <!-- Pagination Dots -->
+    <div class="pagination-dots-div">
+      <span class="title">Center</span>
+      <div class="pagination-dots">
+        <span class="dot" onclick="goToSlide(0)"></span>
+        <span class="dot active" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="third-section">
+    <div class="overlay"></div>
+    <div class="third-top">
+      <h2>Award</h2>
+      <span>글로벌 비즈니스의 중심으로</span>
+      <span>나아가는 최첨단 오피스</span>
+      <div>
+        <p>미래에셋센터원은 거대 자본을 투자한 금융사로서 사업성과 임대 오피스의 효율성을 추구하면서</p>
+        <p>공공의 공익을 충족시키며 국내 건축가로서 자부심을 표현하고자 하였습니다.</p>
+      </div>
+    </div>
+    <div class="third-bottom">
+      <div class="img-container"><img src="/images/thirdi.jpeg" alt="" srcset=""><span>서울 디자인 올림픽 2008</span></div>
+      <div class="img-container"><img src="/images/thirdii.jpeg" alt="" srcset=""><span>제 26회 서울특별시 건축상</span></div>
+      <div class="img-container"><img src="/images/thirdiii.jpeg" alt="" srcset=""><span>우수심의 건축물 선정</span></div>
+    </div>
+    <!-- Pagination Dots -->
+    <div class="pagination-dots-div">
+      <span class="title">Awards</span>
+      <div class="pagination-dots">
+        <span class="dot" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot active" onclick="goToSlide(2)"></span>
+        <span class="dot" onclick="goToSlide(3)"></span>
+      </div>
+    </div>
+  </section>
+  <section class="fourth-section">
+    <h2 class="heading">Core value</h2>
+    <div class="fourth-left"><img src="images/fourthi.png" alt="">
+      <h3>The 1st Environment you would imagine</h3>
+      <div>
+        <p>Center1은 청계천과 한빛공원의 인접성 덕분에 입주사와 이용객들에게 더 나은 업무 환경과 여가 활동의 기회를 제공하고 있습니다.</p>
+        <p>청계광장과 청계천에서 펼쳐지는 다양한 이벤트와 축제는 입주사와 이용객이 문화적 혜택을 누릴 수 있는 장소로 활동되며,</p>
+        <p>최첨단 디지털 기술을 접목한 공간인 한빛공원은 오피스 직원들에게 휴식과 재충전의 공간을 제공합니다. </p>
+      </div>
+      <div class="second">
+        <p>이용자를 위한 감성적인 요소 뿐 아니라 에너지 절약을 위해 Low-E 복층유리 커튼월을 사용하고,</p>
+        <p>중수조와 빗물 저수조 설치 및 빙축열조를 적극적으로 도입하여 운영비 절감과 환경보호를 실현하였습니다.</p>
+        <p>2010년 한국토지주택공사로부터 우수 친환경 건축물로 인증받았으며 대한민국 오피스 빌딩 중 최초로 미국 친환경 건축위원회에서 만든</p>
+        <p>친환경건축물등급 LEED에서 Core&Shell 부분 SILVER 등급을 인증 받았습니다.</p>
+      </div>
+    </div>
+    <div class="fourth-right"><img src="images/fourthii.png" alt="">
+      <h3>The 1st Building you would prefer</h3>
+      <div>
+        <p>Center1은 163,788.56㎡의 건축 연면적으로 서울 도심 최대 규모의 빌딩입니다.</p>
+        <p>서울 도심에서 그 규모만으로도 이목을 끌기에 충분하며, 앞으로도 서울을 상징하는 첨단 글로벌 오피스 빌딩으로 자리매김할 것입니다.</p>
+        <p>안정적 구조, 효율적 공간설계, 친환경 건축, 반영구적 자재, 최첨단 기술은 시간이 지나도 그 가치가 높아질 것입니다.</p>
+      </div>
+      <div class="second">
+        <p>또한 편리한 접근성, 빌딩 앞 공원, 개방된 아트리움 공간 등을 통해 대중과 소통하는 새로운 시대 가치를 담고 있습니다. </p>
+        <p>도심지 오피스는 건물 이용자뿐만 아니라 공공의 이익에도 부합해야 한다는 철학으로, </p>
+        <p>오피스 로비를 2층으로 올리고 1층 아트리움은 누구나 쉽게 접근할 수 있도록 설계했습니다.</p>
+      </div>
+    </div>
+    <div class="fourth-left"><img src="images/fourthiii.png" alt="">
+      <h3>The 1st Impression you would have</h3>
+      <div>
+        <p>Center1의 건축은 음과 양 (Yin & Yang) 철학을 바탕으로 설계되었습니다. </p>
+        <p>하나의 매스가 두 개의 매스로 분리되어 서로 마주보는 형태를 띠고 있으며, 각각 음각과 양각의 형태로 이루어져 있습니다. </p>
+        <p>이 음각과 양각의 형태는 건물의 구조적 및 시각적 균형을 맞추며 상호 보완적인 느낌을 줍니다.</p>
+      </div>
+      <div class="second">
+        <p>또한, 지속 가능한 건축 자재와 기술을 활용하여 친환경 건축물로 설계되었습니다.</p>
+        <p>외부 마감재는 청계천과 하늘, 풀, 나무 등 자연과 조화를 이루며 주변 건물들과 차별화된 자재를 사용하였고, </p>
+        <p>Low-E 복층유리와 화이트 알루미늄 커튼월을 사용하여, 기존 빌딩들과 차별화되는 모던한 느낌의 미래형 빌딩을 구현하였습니다.</p>
+      </div>
+    </div>
+    <div class="fourth-right"><img src="images/fourthii.png" alt="">
+      <h3>The 1st Service you would experience</h3>
+      <div>
+        <p>Center1의 보안 시스템은 최신 기술과 철저한 관리를 결합하여 입주사와 이용객들에게 안전한 환경을 제공합니다.</p>
+        <p>보안과 경비 현황을 한 곳에서 확인, 분석, 대응, 기록할 수 있는 통합 시스템을 구축하여 효율적인 보안 관리를 구현합니다.</p>
+        <p>최첨단 종합방재센터에서는 빌딩 내 모든 시설과 설비의 작동 현황을 실시간으로 감시하고 관리하여 신속한 대응과 예방 조치를 취할 수 있습니다</p>
+      </div>
+      <div class="second">
+        <p>또한, 미래에셋 센터원은 입주사와 방문객들을 위한 다양한 편의시설과 서비스를 제공하여 쾌적하고 효율적인 업무 환경을 조성합니다.</p>
+        <p>최신 운동 기구와 시설을 갖춘 피트니스 센터와 건물 내외에 마련된 여러 휴게 공간은 직원들이 휴식을 취하고 재충전할 수 있는 장소를 제공합니다.</p>
+        <p>우편 접수 및 발송 서비스, 세차 서비스, 플랜트 케어 서비스 등 다양한 편의 서비스를 통해 입주사의 편의를 극대화합니다.</p>
+      </div>
+    </div>
+    <!-- Pagination Dots -->
+    <div class="pagination-dots-div">
+      <span class="title">Core value</span>
+      <div class="pagination-dots">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot active"></span>
+      </div>
+    </div>
+  </section>
+  <!-- footer Section -->
+  <section id="footer-section" class="footer-section">
+    <div class="footer-left">
+      <div class="footer-left-top">
+        <h2>Mirae Asset Center1</h2><span>주소 : 서울특별시 중구 수하동 67 미래에셋 센터원 ( 서울특별시 중구 을지로 5길 26 ) 대표번호 :
+          02-6030-0100</span>
+      </div>
+      <div class="footer-left-bottom"><span>COPYRIGHT(C) 2011 MIRAE ASSET COPORATION. CO., Ltd. ALL RIGHT
+          RESERVED.</span></div>
+    </div>
+    <div class="footer-right"> <span>개인정보처리방침</span>
+      <div class="styled-dropdown">
+        <div class="dropdown-selected">FAMILY SITE <img src="images/footer-dropdown.png" alt="" srcset=""></div>
+        <div class="dropdown-options">
+          <div class="dropdown-option" data-value="option1">미래에셋</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
