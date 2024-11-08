@@ -382,6 +382,8 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  overflow: hidden;
+  width: 100vw;
 }
 .sixth-top{
     display: flex;
