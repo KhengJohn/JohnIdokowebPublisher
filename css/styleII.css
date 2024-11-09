@@ -21,7 +21,9 @@
   box-sizing: border-box;
   font-family: "Spoqa Han Sans Neo", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 header {
   background: transparent;
   color: var(--primary-white);
