@@ -559,7 +559,9 @@ button:hover {
     width: 46px;
     height: 24px;
   }
-
+  .web-iconII {
+display: none;
+  }
   nav ul li {
     margin: 0 15px;
     width: 148px;
@@ -812,7 +814,9 @@ button:hover {
     width: 46px;
     height: 24px;
   }
-
+  .web-iconII {
+    display: none;
+      }
   nav ul li {
     margin: 0 15px;
     width: 108px;
@@ -1051,7 +1055,10 @@ button:hover {
   .web-icon {
     display: none;
   }
-
+  .web-iconII {
+    width: 46px;
+    height: 24px;
+  }
   nav ul li {
     margin: 15px 15px;
     width: max-content;
@@ -1324,7 +1331,10 @@ button:hover {
   .web-icon {
     display: none;
   }
-
+  .web-iconII {
+    width: 46px;
+    height: 24px;
+  }
   nav ul li {
     margin: 15px 15px;
     width: max-content;
