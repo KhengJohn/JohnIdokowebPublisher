@@ -17,7 +17,6 @@ const toggleMenuModule = (() => {
   return { init };
 })();
 
-// Improved Slider Module with Debugging for goToSlide
 const sliderModule = (() => {
   let currentSlide = 0;
   const slideInterval = 10000;
@@ -190,12 +189,21 @@ function initializeSwiper() {
       968: { slidesPerView: 3.5 },
       400: { slidesPerView: 1.8 },
       0: { slidesPerView: 1.4 },
-    }, autoplay: {
-      delay: 3000, // Delay between transitions in milliseconds (3 seconds in this example)
-      disableOnInteraction: false, // Keeps autoplay running even after user interactions like swiping
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
     },
   });
 }
+
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 
 // Document Ready Initialization
 document.addEventListener("DOMContentLoaded", () => {
