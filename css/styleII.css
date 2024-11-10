@@ -416,6 +416,9 @@ nav ul li a {
   .web-iconII {
     display: none;
   }
+  .web-iconII {
+    display: none;
+  }
   nav ul li {
     width: 168px;
     height: 32px;
@@ -658,7 +661,9 @@ nav ul li a {
     width: 46px;
     height: 24px;
   }
-
+  .web-iconII {
+    display: none;
+  }
   nav ul li {
     margin: 0 15px;
     width: 148px;
@@ -835,7 +840,9 @@ nav ul li a {
     width: 46px;
     height: 24px;
   }
-
+  .web-iconII {
+    display: none;
+  }
   nav ul li {
     margin: 0 15px;
     width: 108px;
@@ -976,7 +983,10 @@ nav ul li a {
   .web-icon {
     display: none;
   }
-
+  .web-iconII {
+    width: 46px;
+    height: 24px;
+  }
   nav ul li {
     margin: 15px 15px;
     width: max-content;
@@ -1160,7 +1170,10 @@ nav ul li a {
   .web-icon {
     display: none;
   }
-
+  .web-iconII {
+    width: 46px;
+    height: 24px;
+  }
   nav ul li {
     margin: 15px 15px;
     width: max-content;

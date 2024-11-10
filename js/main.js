@@ -195,16 +195,7 @@ function initializeSwiper() {
       disableOnInteraction: false,
     },
   });
-}
-
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-scrollToTopBtn.addEventListener("click", function () {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
-
+} 
 // Document Ready Initialization
 document.addEventListener("DOMContentLoaded", () => {
   toggleMenuModule.init();
@@ -217,5 +208,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add click event listeners to each button
   goToSlideButtons.forEach((button, index) => {
     button.addEventListener("click", () => sliderModule.goToSlide(index));
+  });
+});
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+scrollToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
 });

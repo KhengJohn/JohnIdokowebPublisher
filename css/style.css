@@ -356,14 +356,22 @@ nav ul li a {
   width: 32px;
   height: 32px;
 }
-
-.fifth-menu div:nth-of-type(1) {
-  background-color: #00427a;
-}
+ 
 .fifth-menu div span {
   font-size: 14px;
   font-weight: bold;
   color: #00427a;
+}
+.fifth-menu div:hover {
+  background-color: #00427a;
+}
+
+.fifth-menu div:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.fifth-menu div:hover span {
+  color: var(--primary-white);
 }
 .fifth-div {
   width: 100%;
@@ -1933,6 +1941,21 @@ button:hover {
     flex-direction: column;
     gap: 30px;
   }
+  .fifth-menu {
+    gap: 10px;
+  }
+  .fifth-menu div {
+    height: 60px;
+    width: 60px;
+  }
+  .fifth-menu div img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .fifth-menu div span {
+    font-size: 10px;
+  }
   .fifth-slider-container {
     height: 100%;
   }
@@ -2382,6 +2405,39 @@ button:hover {
     display: flex;
     flex-direction: column;
     gap: 24px;
+  }
+  .text-white {
+    color: var(--primary-white) !important;
+  }
+  .fifth-menu {
+    gap: 10px;right: 9.5px;
+    bottom: 64px;
+  }
+  .fifth-menu div {
+    height: 60px;
+    width: 60px;  
+    background-color: var(--primary-white);
+  }
+  .fifth-menu div:nth-of-type(1) {
+    background-color: #fff;
+  }
+  .fifth-menu div img {
+    width: 20px;
+    height: 20px;
+  }
+  .fifth-menu div:hover {
+    background-color: #00427a;
+  }
+  
+  .fifth-menu div:hover img {
+    filter: brightness(0) invert(1);
+  }
+  
+  .fifth-menu div:hover span {
+    color: var(--primary-white);
+  }
+  .fifth-menu div span {
+    font-size: 10px;
   }
   .fifth-slider-container {
     height: 100%;
