@@ -1482,6 +1482,7 @@ button:hover {
     font-size: 14px;
   }
   .hero {
+    padding-top: 230px;
     padding-left: 102px;
     gap: 10px;
   }
@@ -1809,6 +1810,7 @@ button:hover {
   }
 
   .hero {
+    padding-top: 180px;
     padding-left: 52px;
     gap: 20px;
   }
@@ -2490,6 +2492,6 @@ button:hover {
 
   .dropdown-option {
     font-size: 12px;
-    width: 109px;
+    width: 109px; 
   }
 }
