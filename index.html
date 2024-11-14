@@ -44,6 +44,10 @@
       <p>국내를 넘어 세계의 무대를 준비하는 여러분들과 함께 합니다.</p>
     </div>
   </section>
+  <section style="background-color: black;">
+  <!-- <button id="getLocationBtn">Get My Location</button>  -->
+  <p style="color: blue;" id="paraID"> </p>
+ </section>
   <!-- Convenice Section -->
   <section id="convenice" class="convenice">
     <h2 class="">Convenience</h2>
@@ -343,6 +347,94 @@
     </div>
   </section>
   <script src="./js/main.js"></script>
+  <script>
+    // Call the geolocation API to get user information
+    fetch('https://ipapi.co/json/')
+        .then(response => response.json())
+        .then(data => {
+          console.log("data",data)
+            if (data.country_code === 'US') {
+                // Redirect or block access if the user is from the US
+                document.body.innerHTML = '<h1>Access Denied</h1><p>Your location is restricted from accessing this site.</p>';
+                console.log("ACCESS BLOCKED")
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching location data:', error);
+        });
+</script>
+<script>
+  document.getElementById('getLocationBtn').addEventListener('click', () => {
+  const locationOutput = document.getElementById('locationOutput');
+  getlocation =()=>{
+    
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        locationOutput.textContent = `Latitude: ${latitude}, Longitude: ${longitude}`;
+      },
+      (error) => {
+        switch (error.code) {
+          case error.PERMISSION_DENIED:
+            locationOutput.textContent = "User denied the request for Geolocation.";
+            break;
+          case error.POSITION_UNAVAILABLE:
+            locationOutput.textContent = "Location information is unavailable.";
+            break;
+          case error.TIMEOUT:
+            locationOutput.textContent = "The request to get user location timed out.";
+            break;
+          case error.UNKNOWN_ERROR:
+            locationOutput.textContent = "An unknown error occurred.";
+            break;
+        }
+      }
+    );
+  } else {
+    locationOutput.textContent = "Geolocation is not supported by this browser.";
+  }
+  }
+  getlocation()
+});
+
+</script>
+<script>
+  var variable1 = document.getElementById("paraID");
+
+  // This function will get your current location
+  function getlocation() {
+      navigator.geolocation.watchPosition(showLoc, showError);
+  }
+
+  // This function will show your current location
+  function showLoc(pos) {
+      variable1.innerHTML = `Accuracy:${ pos.coords.latitude} ${   pos.coords.longitude }` ;
+  }
+
+  // Optional: Error handling function
+  function showError(error) {
+      switch(error.code) {
+          case error.PERMISSION_DENIED:
+              variable1.innerHTML = "User denied the request for Geolocation.";
+              break;
+          case error.POSITION_UNAVAILABLE:
+              variable1.innerHTML = "Location information is unavailable.";
+              break;
+          case error.TIMEOUT:
+              variable1.innerHTML = "The request to get user location timed out.";
+              break;
+          case error.UNKNOWN_ERROR:
+              variable1.innerHTML = "An unknown error occurred.";
+              break;
+      }
+  }
+ 
+  // Run when the page loads
+  document.addEventListener("DOMContentLoaded", getlocation);
+</script>
+
 </body>
 
 </html>
